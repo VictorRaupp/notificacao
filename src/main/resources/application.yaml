@@ -1,30 +1,26 @@
 spring:
   mail:
-    host: smtp.gmail.com
-    port: 587
-    username: vp93591@gmail.com
-    password: gtks huzi lvnq srrn
+    host: ${MAIL_HOST:smtp.gmail.com}
+    port: ${MAIL_PORT:587}
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
     protocol: smtp
     properties:
       mail:
         smtp:
-          socketFactory:
-            port: 465
-            class: javax.net.ssl.SSLSocketFactory
-            fallback: false
           auth: true
           starttls:
             enable: true
           connectiontimeout: 5000
           timeout: 3000
-          writetimeou: 5000
+          writetimeout: 5000
     thymeleaf:
       enable: true
 
 envio:
   email:
-    remetente: vp93591@gmail.com
-    nomeRemetente: 'VitroX'
+    remetente: ${MAIL_FROM}
+    nomeRemetente: ${MAIL_SENDER_NAME:VitroX}
 
 server:
-  port: 8082
+  port: ${SERVER_PORT:8082}
