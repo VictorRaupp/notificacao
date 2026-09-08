@@ -1,0 +1,9 @@
+spring:
+  mail:
+    username: test@example.com
+    password: test-password
+
+envio:
+  email:
+    remetente: test@example.com
+    nomeRemetente: Test
