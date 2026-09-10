@@ -149,7 +149,7 @@ Responsável por receber os dados da tarefa e realizar o envio da notificação.
   "dataEvento": "08-09-2026 14:00:00",
   "emailUsuario": "usuario@email.com",
   "dataAlteracao": "07-09-2026 10:30:00",
-  "statusTaferaEnum": "PENDENTE"
+  "statusTarefaEnum": "PENDENTE"
 }
 ```
 
@@ -258,7 +258,7 @@ dataCriacao
 dataEvento
 emailUsuario
 dataAlteracao
-statusTaferaEnum
+statusTarefaEnum
 ```
 
 ---
